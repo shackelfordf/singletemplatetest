@@ -112,24 +112,6 @@ div.grid-content {
   width: 100%;
   display: inline-block; }
   .social-share i {
-    background-color: #FFDD00;
-    border-radius: 2em;
-    color: #0F2446;
-    display: inline-block;
-    height: 2em;
-    line-height: 2em;
-    width: 2em;
-    text-align: center; }
-  .social-share .fa-twitter {
-    margin-left: 1em; }
-  .social-share i:hover {
-    transition: all 0.7s ease;
-    -webkit-transition: all 0.7s ease;
-    -moz-transition: all 0.7s ease;
-    -o-transition: all 0.7s ease;
-    background-color: #0F2446;
-    color: #FFDD00; }
-  .social-share i {
     font-size: 1.5em; }
   .social-share .fa-twitter {
     margin-left: 1em; }

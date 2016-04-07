@@ -1,0 +1,88 @@
+@import "custom";
+//Default Transition
+$transition_type: all .7s ease;
+@mixin transition {
+	transition: $transition_type;
+	-webkit-transition: $transition_type;
+	-moz-transition: $transition_type;
+	-o-transition: $transition_type;
+}
+//Theme Color Mixins
+@mixin header_colors {
+	background: $theme_header_bg;
+	color: $theme_header_txt;
+} 
+@mixin footer_colors {
+	background: $theme_footer_bg;
+	color: $theme_footer_txt;
+}
+@mixin grid_colors {
+	background: $theme_grid_bg;
+	color: $theme_grid_txt;	
+	a {
+		color: $theme_grid_link;
+		&:hover {
+			@include transition;
+			color: $theme_grid_link_hover;
+		}
+	}
+	h1,h2,h3,h4,h5 {
+		color: $theme_grid_header;
+	}
+}
+//Form Colors
+@mixin form_colors {
+	.signup-form {
+		background: $theme_form_bg;
+		.grid-content {
+			background: $theme_form_bg;
+			color: $theme_form_txt;
+			.pure-button {
+				background: $theme_form_btn_bg;
+				color:  $theme_form_btn_txt;
+				&:hover {
+					@include transition;
+					background: $theme_form_btn_txt;
+					color: $theme_form_btn_bg;
+				}
+			}
+		}
+	}
+}
+//Rounded Social Share Buttons
+@mixin social_share_rounded {
+  i {
+    background-color: $theme_button_bg;
+    border-radius: 2em;
+    color: $theme_button_txt;
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    width: 2em;
+    text-align: center;
+  }
+  .fa-twitter {
+    margin-left: 1em;
+  }
+  i:hover {
+  	@include transition;
+    background-color: $theme_button_txt;
+    color: $theme_button_bg;
+  }
+} 
+//PureCSS Buttons
+@mixin button {
+	border-radius: 0;
+	background-color: $theme_button_bg;
+	color: $theme_button_txt;
+	&:hover, &:focus {
+		background-image: none;
+		background-color: $theme_button_txt;
+		color: $theme_button_bg;
+		@include transition;
+	}
+}
+.pure-button {
+	@include button
+}
+

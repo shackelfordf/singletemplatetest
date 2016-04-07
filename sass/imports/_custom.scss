@@ -1,0 +1,40 @@
+@import "mixins";
+//Custom Styles
+//Use this sheet to add your custom touches to the core scss. Brand colors are listed below:
+//$brand_lt_blue
+//$brand_dk_blue
+//$brand_white
+//$brand_red
+//$brand_yellow
+//$brand_gray
+
+//Theme Colors
+//Use the brand colors for your theme colors
+//Body and Heading text Colors
+$theme_body: $brand_dk_blue;
+$theme_body_link: $brand_lt_blue;
+$theme_body_link_hover: $brand_dk_blue;
+$theme_heading: $brand_dk_blue;
+//Footer Colors
+$theme_footer_bg: $brand_dk_blue;
+$theme_footer_txt: $brand_yellow; 
+//Header Colors
+$theme_header_bg: $brand_dk_blue;
+$theme_header_txt: $brand_yellow; 
+//Button Colors
+$theme_button_bg: $brand_yellow;
+$theme_button_txt: $brand_dk_blue;
+//Grid Colors
+$theme_grid_bg: $brand_dk_blue;
+$theme_grid_txt: $brand_white;
+$theme_grid_header: $brand_yellow;
+$theme_grid_link: $brand_lt_blue;
+$theme_grid_link_hover: $brand_yellow;
+//BSD Form Colors
+$theme_form_bg: $brand_red;
+$theme_form_txt: $brand_black;
+$theme_form_btn_bg: $brand_black;
+$theme_form_btn_txt: $brand_white;
+
+//Start Theme Customizations below: 
+	

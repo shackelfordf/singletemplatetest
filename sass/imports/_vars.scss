@@ -1,0 +1,23 @@
+//Fonts
+$header-font: 'Gotham A', 'Gotham B', sans-serif;
+$body-font: 'Lato', sans-serif;
+
+
+//Brand Colors
+$brand_lt_blue: #00AEF3;
+$brand_dk_blue: #0F2446;
+$brand_white: #fff;
+$brand_red: #E31818;
+$brand_yellow: #FFDD00;
+$brand_gray: #F6F6F6;
+$brand_black: #000;
+
+//Brand Color Overlays
+$opacity: 0.7;
+$lt_blue_overlay: rgba($brand_lt_blue, $opacity);
+$dk_blue_overlay: rgba($brand_dk_blue, $opacity);
+$white_overlay: rgba($brand_white, $opacity);
+$red_overlay: rgba($brand_red, $opacity);
+$yellow_overlay: rgba($brand_yellow, $opacity);
+$gray_overlay: rgba($brand_gray, $opacity);
+$black_overlay: rgba($brand_black, $opacity);

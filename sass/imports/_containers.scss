@@ -1,0 +1,90 @@
+html,
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+	width: 100%;
+}
+#wrapper {
+	min-height:100%;
+	position:relative;
+}
+//Header
+#header {
+	@include header_colors; 
+	text-align: center;
+	padding: 1em;
+	h1, h2, h3, h4, h5 {
+		@include header_colors; 
+	}
+}
+//Main 
+#main {
+	.main-body {
+		padding: 1em 2em;
+	}
+}
+//PureCSS Grids
+.pure-g > div[class*="pure-u-"] {
+  padding: 1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.pure-g [class *= "pure-u"] {
+	font-family: $body-font;
+}
+.pure-g {
+	font-family: $body-font;
+}
+div.grid-content {
+	@include grid_colors;
+	padding: 1em;
+	font-family: $body-font;
+}
+//BSD Form
+@include form_colors;
+.signup-form {
+	padding: 1em;
+	.grid-content {
+		input {
+			width: 100%;
+			line-height: 2;
+		}
+		.pure-button {
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+	}
+}
+//Social Share
+.social-share {
+	width: 100%;
+	display: inline-block;
+	i {
+		font-size: 1.5em;
+	}
+	.fa-twitter {
+		margin-left: 1em;	
+	}
+}
+//Footer
+#footer {
+	@include footer_colors;
+	text-align: center;
+	clear: both;
+	padding:1em;
+	width: calc(100% - 2em);
+	width: -moz-calc(100% - 2em);
+	width: -webkit-calc(100% - 2em);
+	width: -o-calc(100% -2em);
+	.copyright-footer {
+		border: 1px solid $theme_footer_txt;
+		.copyright-text {
+			padding: 1em;
+			p {
+				margin: 0;
+			}	
+		}
+	}
+}
